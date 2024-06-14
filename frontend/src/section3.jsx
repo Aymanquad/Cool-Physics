@@ -18,7 +18,7 @@ const ThirdSection = () => {
       {
         threshold: 0.4, // Adjust the threshold as needed
       }
-    );
+    ); 
 
     if (sectionRef.current) {
       observer.observe(sectionRef.current);

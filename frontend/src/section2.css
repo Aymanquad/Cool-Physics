@@ -5,6 +5,16 @@
     background: linear-gradient(to bottom, #22232b, rgb(31, 31, 33));
   }
 
+.fourth-section {
+  padding: 188px 0; /* Adjust padding as needed */
+  background: rgb(24, 23, 23);
+}
+.section5 {
+  color: #ffffff;
+  padding: 128px 0; /* Adjust padding as needed */
+  background: rgb(24, 23, 23);
+}
+
   .my-container {
     opacity: 0; /* Initially hidden */
     transform: translateY(50px); /* Initially positioned lower */
@@ -19,9 +29,16 @@
   .text-content {
     flex: 1;
   }
-  
   .image-content {
     flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .text-content2 {
+    flex: 1;
+  }
+  .image-content2 {
+    flex: 0.66;
     display: flex;
     justify-content: center;
   }
@@ -34,10 +51,19 @@
     box-shadow: 2px 4px 12px 8px rgba(255, 255, 255, 0.123); /* Shadow effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
   }
+
+  .styled-image2 {
+    max-width: 70%;
+    height: 30%;
+    border: 2px solid rgb(71, 71, 71); /* Add border to the image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 4px 12px 8px rgba(255, 255, 255, 0.123); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
   
-  .styled-image:hover {
+  .styled-image:hover , .styled-image2:hover {
     transform: scale(1.075); /* Zoom in */
-    box-shadow: 3px 4px 12px 10px rgba(255, 255, 255, 0.323); /* Increased shadow effect */
+    box-shadow: 3px 4px 12px 10px rgba(255, 255, 255, 0.283); /* Increased shadow effect */
   }
 
   .animated-p {
