@@ -1,0 +1,26 @@
+.title-container {
+  margin-left: 0px; /* Adjust margin as needed to position the title */
+}
+
+.animated-title2 {
+  margin-left: 8%;
+  font-size: 27px;
+  color: #ffffff;
+  margin-bottom: 18px; /* Adjust space between title and line */
+}
+
+.horizontal-line {
+
+  margin-left: 8%;/* Adjust left position to align with the title */
+  bottom: -5px; /* Adjust bottom position as needed */
+  display: block;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to bottom, #2cb1a8, rgb(16, 190, 185));
+  transition: width 1.3s ease-in-out; /* Smooth transition for width */
+}
+
+
+.animate {
+  width: 40%; /* Adjust length of the line when animated */
+}

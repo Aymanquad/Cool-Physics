@@ -5,6 +5,7 @@ import Section1 from './section1'
 import Section2 from './section2'
 import Section3 from './section3'
 import FourthSection from './section4'
+import TitleWithAnimation from './title';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'intersection-observer';
 
@@ -26,6 +27,10 @@ function App() {
         With these laws , you're halfway <br />  done with physics. 
       </h4>    
       
+      <TitleWithAnimation
+        title="Cool Topics"
+      />
+
     </>
   )
 }
