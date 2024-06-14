@@ -15,7 +15,7 @@ const TitleWithAnimation = ({ title }) => {
           }
         });
       },
-      { threshold: 0.5 } // Trigger animation when 50% of the line is visible
+      { threshold: 0.7 } // Trigger animation when 50% of the line is visible
     );
 
     if (lineRef.current) {

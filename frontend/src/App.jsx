@@ -6,11 +6,44 @@ import Section2 from './section2'
 import Section3 from './section3'
 import FourthSection from './section4'
 import TitleWithAnimation from './title';
+import CardSection from './cards-section';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'intersection-observer';
 
 
-
+const cardsData = [
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 1 Description',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 2 Description',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 1 Description',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 2 Description',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 1 Description',
+    buttonText: 'Learn More',
+  },
+  {
+    image: 'https://via.placeholder.com/300x200',
+    text: 'Card 2 Description',
+    buttonText: 'Learn More',
+  },
+  // Add more cards as needed
+];
 
 function App() {
   
@@ -30,6 +63,8 @@ function App() {
       <TitleWithAnimation
         title="Cool Topics"
       />
+
+      <CardSection cards={cardsData} />
 
     </>
   )
