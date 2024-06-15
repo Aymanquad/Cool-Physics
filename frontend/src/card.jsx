@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './card.css'; // Import your CSS file for styling
 
-const Card = ({ image, text, buttonText }) => {
+const Card = ({ image, title, text, buttonText }) => {
   return (
     <div className="card">
       <img src={image} alt="Card" className="card-image" />
       <div className="card-content">
-        <p>{text}</p>
+        <h3 className="card-title">{title}</h3>
+        <p className="card-p-text">{text}</p>
         <button className="card-button">{buttonText}</button>
       </div>
     </div>
@@ -16,6 +17,7 @@ const Card = ({ image, text, buttonText }) => {
 
 Card.propTypes = {
   image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
 };

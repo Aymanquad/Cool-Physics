@@ -10,36 +10,59 @@ import CardSection from './cards-section';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'intersection-observer';
 
+import gravityImg from './assets/gravity-img.jpg';
+import relativityImg from './assets/relativity-img.jpg';
+import BlackholeImg from './assets/blackhole-img.jpg';
+import quantomImg from './assets/quantommech.jpg';
+import darkmatterImg from './assets/darkmatter-img.jpg';
+import plasmaImg from './assets/plasma-img.jpg';
+import GyroscopeImg from './assets/gyroscope-img.jpg';
+
+
+
 
 const cardsData = [
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 1 Description',
+    image: gravityImg,
+    title: 'Gravity',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 2 Description',
+    image: relativityImg,
+    title: 'Relativity',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    buttonText: 'Learn More',
+  },
+
+  {
+    image: BlackholeImg,
+    title: 'Black Holes',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 1 Description',
+    image: darkmatterImg,
+    title: 'Dark Matter',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 2 Description',
+    image: plasmaImg,
+    title: 'Plasma Physics',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 1 Description',
+    image: GyroscopeImg,
+    title: 'Gyroscopic Motion',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   {
-    image: 'https://via.placeholder.com/300x200',
-    text: 'Card 2 Description',
+    image: quantomImg,
+    title: 'Quantom Mechanics',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
     buttonText: 'Learn More',
   },
   // Add more cards as needed
@@ -65,6 +88,10 @@ function App() {
       />
 
       <CardSection cards={cardsData} />
+
+      <TitleWithAnimation
+        title="Interesting Theories and Paradoxes"
+      />
 
     </>
   )
