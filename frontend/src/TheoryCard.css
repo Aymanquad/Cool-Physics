@@ -1,0 +1,68 @@
+.theory-card {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    background-color: #2e3b4e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Center the card horizontally */
+    width: 78%;
+    max-height: 340px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .theory-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .theory-card-image {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .theory-card-content {
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .theory-card-title {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .theory-card p {
+    color: #ccc;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .theory-card {
+      flex-direction: column;
+    }
+  
+    .theory-card-content {
+      order: 2; /* Move content below image */
+      padding: 2px 2px 0; /* Adjust padding */
+    }
+  
+    .theory-card-image {
+      order: 1; /* Move image above content */
+    }
+  
+    .theory-card-image {
+      width: 100%;
+    }
+  
+    .theory-card-content {
+      width: 70%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  

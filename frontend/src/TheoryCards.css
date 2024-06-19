@@ -1,0 +1,18 @@
+.theory-cards {
+    margin: 0px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(24, 23, 23);
+    width: 100%;
+  }
+  
+  /* Adjust width for mobile */
+  @media (max-width: 768px) {
+    .theory-cards {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

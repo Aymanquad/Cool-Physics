@@ -7,6 +7,7 @@ import Section3 from './section3'
 import FourthSection from './section4'
 import TitleWithAnimation from './title';
 import CardSection from './cards-section';
+import TheoryCards from './TheoryCards';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import 'intersection-observer';
 
@@ -68,6 +69,51 @@ const cardsData = [
   // Add more cards as needed
 ];
 
+
+
+const theoryCardData1 = [
+  {
+    title: 'Card 1',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: BlackholeImg,
+  },
+  {
+    title: 'Card 2',
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: GyroscopeImg,
+  }
+];
+
+const theoryCardData2 = [
+  {
+    title: 'Card 3',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipi',
+    image: plasmaImg,
+  },
+  {
+    title: 'Card 4',
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore ',
+    image: darkmatterImg,
+  }
+];
+
+const theoryCardData3 = [
+
+  {
+    title: 'Card 1',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: BlackholeImg,
+  },
+  {
+    title: 'Card 2',
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: GyroscopeImg,
+  },
+  // Add more cards as needed
+];
+
+
+
 function App() {
   
 
@@ -91,6 +137,14 @@ function App() {
 
       <TitleWithAnimation
         title="Interesting Theories and Paradoxes"
+      />
+
+      <TheoryCards  cards={theoryCardData1} />
+      <TheoryCards cards={theoryCardData2} />
+      <TheoryCards cards={theoryCardData3} />
+
+      <TitleWithAnimation
+        title="Last thing"
       />
 
     </>
