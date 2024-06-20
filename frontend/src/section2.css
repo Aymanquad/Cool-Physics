@@ -18,6 +18,12 @@
   background: rgb(24, 23, 23);
 }
 
+.pardoxline{
+  margin-bottom: 0px;
+  background: rgb(24, 23, 23);
+  padding-bottom: 180px;
+}
+
   .my-container {
     opacity: 0; /* Initially hidden */
     transform: translateY(50px); /* Initially positioned lower */

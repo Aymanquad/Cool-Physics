@@ -19,6 +19,17 @@ import darkmatterImg from './assets/darkmatter-img.jpg';
 import plasmaImg from './assets/plasma-img.jpg';
 import GyroscopeImg from './assets/gyroscope-img.jpg';
 
+import theory1Img from './assets/theory1.webp';
+import theory2Img from './assets/theory2.jpg';
+import theory4Img from './assets/theory4.jpg';
+import theory5Img from './assets/theory5.jpg';
+import theory6Img from './assets/theory6.jpeg';
+import paradox1Img from './assets/paradox1.jpg';
+import paradox2Img from './assets/paradox2.jpg';
+import paradox3Img from './assets/paradox3.jpg';
+import paradox4Img from './assets/paradox4.jpg';
+import paradox6Img from './assets/paradox6.webp';
+
 
 
 
@@ -73,43 +84,82 @@ const cardsData = [
 
 const theoryCardData1 = [
   {
-    title: 'Card 1',
+    title: 'String Theory',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: BlackholeImg,
+    image: theory1Img,
   },
   {
-    title: 'Card 2',
+    title: 'Beauty of Time',
     content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: GyroscopeImg,
+    image: theory2Img,
   }
 ];
 
 const theoryCardData2 = [
   {
-    title: 'Card 3',
+    title: 'Chaos Theory',
     content: 'Lorem ipsum dolor sit amet, consectetur adipi',
-    image: plasmaImg,
+    image: 'https://miro.medium.com/v2/resize:fit:786/format:webp/1*6ehwW04jwunImzrhYKRlbQ.gif',
   },
   {
-    title: 'Card 4',
+    title: 'Solipsism',
     content: 'Sed do eiusmod tempor incididunt ut labore et dolore ',
-    image: darkmatterImg,
+    image: theory4Img,
   }
 ];
 
 const theoryCardData3 = [
 
   {
-    title: 'Card 1',
+    title: 'Phenomenalism',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: BlackholeImg,
+    image: theory5Img,
   },
   {
-    title: 'Card 2',
+    title: 'Superfluid space-time',
     content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: GyroscopeImg,
+    image: theory6Img,
   },
   // Add more cards as needed
+];
+
+const paradoxData1 = [
+  {
+    title: 'Bootstrap Paradox',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: paradox1Img,
+  },
+  {
+    title: "Einstein's twin paradox" ,
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: paradox2Img,
+  }
+];
+
+const paradoxData2 = [
+  {
+    title: 'The billiard ball paradox',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: paradox3Img,
+  },
+  {
+    title: 'Boltzmann Brain Paradox',
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: paradox4Img,
+  }
+];
+
+const paradoxData3 = [
+  {
+    title: "Zeno's Racetrack Paradox",
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: 'https://img.freepik.com/premium-photo/closeup-portrait-medieval-knight-black-backgroundgenerative-ai_391052-18569.jpg',
+  },
+  {
+    title: 'Einstein–Podolsky–Rosen (EPR) paradox',
+    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: paradox6Img,
+  }
 ];
 
 
@@ -139,9 +189,22 @@ function App() {
         title="Interesting Theories and Paradoxes"
       />
 
-      <TheoryCards  cards={theoryCardData1} />
-      <TheoryCards cards={theoryCardData2} />
-      <TheoryCards cards={theoryCardData3} />
+      <TheoryCards  cards={theoryCardData1} order="default" />
+      <TheoryCards cards={theoryCardData2} order="default" />
+      <TheoryCards cards={theoryCardData3} order="default" />
+
+      <div className="section5" />
+
+      <h2 className="section5 d-flex align-items-center justify-content-center text-center">
+        What is a Paradox ?
+      </h2> 
+      <h4 className="pardoxline d-flex align-items-center justify-content-center text-center">
+        " A paradox is a statement that seems self-contradictory (or) absurd <br /> but ... in reality expresses a possible truth. " 
+      </h4>  
+
+      <TheoryCards cards={paradoxData1} order="reverse" />
+      <TheoryCards cards={paradoxData2} order="reverse" />
+      <TheoryCards cards={paradoxData3} order="reverse" />
 
       <TitleWithAnimation
         title="Last thing"

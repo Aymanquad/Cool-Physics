@@ -4,17 +4,17 @@ import TheoryCard from './TheoryCard';
 import { motion, useAnimation } from 'framer-motion';
 import './TheoryCards.css';
 
-const TheoryCards = ({ cards }) => {
+const TheoryCards = ({ cards, order }) => {
   const controls = useAnimation();
   const cardsRef = useRef([]);
 
   const handleScroll = () => {
     cardsRef.current.forEach((card, index) => {
-      if (card.getBoundingClientRect().top < window.innerHeight * 0.8) {
+      if (card.getBoundingClientRect().top < window.innerHeight * 0.78) {
         controls.start(i => ({
           opacity: 1,
           y: 0,
-          transition: { delay: i * 0.05, duration: 0.6 }, // Adjusted delay
+          transition: { delay: i * 0.043, duration: 0.54 },
         }));
       } else {
         controls.start({
@@ -44,6 +44,7 @@ const TheoryCards = ({ cards }) => {
             title={card.title}
             content={card.content}
             image={card.image}
+            order={order}
           />
         </motion.div>
       ))}
@@ -59,6 +60,11 @@ TheoryCards.propTypes = {
       image: PropTypes.string.isRequired,
     })
   ).isRequired,
+  order: PropTypes.oneOf(['default', 'reverse']),
+};
+
+TheoryCards.defaultProps = {
+  order: 'default',
 };
 
 export default TheoryCards;

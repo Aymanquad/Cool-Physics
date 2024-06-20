@@ -11,9 +11,14 @@
     max-height: 340px;
     box-sizing: border-box;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
+
   
+.theory-card.reverse {
+  flex-direction: row-reverse; /* Reverse the order of the image and content */
+}
+
   .theory-card.in-view {
     opacity: 1;
     transform: translateY(0);
