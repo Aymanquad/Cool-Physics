@@ -18,10 +18,12 @@
   background: rgb(24, 23, 23);
 }
 
-.pardoxline{
+.paradoxline{
   margin-bottom: 0px;
+  padding: 20px;
   background: rgb(24, 23, 23);
   padding-bottom: 180px;
+  color: #ffffff;
 }
 
   .my-container {

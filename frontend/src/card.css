@@ -37,10 +37,9 @@
   color: #fffdfd;
   font-size: 0.82rem;
 }
-
 .card-button {
-  background-color: #2cb1a8;
-  background-image: linear-gradient(45deg, #2cb1a8, #1f8073);
+  background-color: #071e37; /* Blue color */
+  background-image: linear-gradient(45deg, #071e37, #66B2FF);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -51,6 +50,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95); /* Text shadow for better readability */
 }
 
 .card-button::before {
@@ -72,17 +72,21 @@
 }
 
 .card-button:hover {
-  background-color: #1f8073;
-  background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
-  box-shadow: 0 15px 20px rgba(97, 97, 97, 0.3);
+  background-color: #66B2FF;
+  background-image: linear-gradient(45deg, #66B2FF, #007BFF);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
 }
 
 .card-button:active {
-  background-color: #1f8073;
-  background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
-  box-shadow: 0 5px 10px rgba(97, 97, 97, 0.2);
+  background-color: #66B2FF;
+  background-image: linear-gradient(45deg, #66B2FF, #007BFF);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
 }
+
+
+
+
 
 

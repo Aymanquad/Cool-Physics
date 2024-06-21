@@ -4,22 +4,22 @@ import TheoryCard from './TheoryCard';
 import { motion, useAnimation } from 'framer-motion';
 import './TheoryCards.css';
 
-const TheoryCards = ({ cards, order }) => {
+const TheoryCards = ({ cards = [], order}) => {
   const controls = useAnimation();
   const cardsRef = useRef([]);
 
   const handleScroll = () => {
     cardsRef.current.forEach((card, index) => {
-      if (card.getBoundingClientRect().top < window.innerHeight * 0.78) {
+      if (card.getBoundingClientRect().top < window.innerHeight * 0.98) {
         controls.start(i => ({
           opacity: 1,
           y: 0,
-          transition: { delay: i * 0.043, duration: 0.54 },
+          transition: { delay: i * 0.053, duration: 0.54 },
         }));
       } else {
         controls.start({
           opacity: 0,
-          y: 50,
+          y: 30,
         });
       }
     });
@@ -37,7 +37,7 @@ const TheoryCards = ({ cards, order }) => {
         <motion.div
           key={index}
           ref={el => (cardsRef.current[index] = el)}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={controls}
         >
           <TheoryCard
@@ -45,6 +45,7 @@ const TheoryCards = ({ cards, order }) => {
             content={card.content}
             image={card.image}
             order={order}
+            id={card.id}
           />
         </motion.div>
       ))}
@@ -61,10 +62,6 @@ TheoryCards.propTypes = {
     })
   ).isRequired,
   order: PropTypes.oneOf(['default', 'reverse']),
-};
-
-TheoryCards.defaultProps = {
-  order: 'default',
 };
 
 export default TheoryCards;

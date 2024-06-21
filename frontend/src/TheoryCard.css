@@ -1,73 +1,123 @@
 .theory-card {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center content horizontally */
-    background-color: #2e3b4e;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px auto; /* Center the card horizontally */
-    width: 78%;
-    max-height: 340px;
-    box-sizing: border-box;
-    opacity: 0;
-    transform: translateY(30px);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  background: linear-gradient(135deg, #2e3b4e, #2c2b2b);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto; /* Center the card horizontally */
+  width: 78%;
+  max-height: 340px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(30px);
+}
 
-  
 .theory-card.reverse {
   flex-direction: row-reverse; /* Reverse the order of the image and content */
 }
 
-  .theory-card.in-view {
-    opacity: 1;
-    transform: translateY(0);
+.theory-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.theory-card-image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theory-card-content {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  overflow: hidden; /* Prevents overflow of content */
+}
+
+.theory-card-title {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.theory-card p {
+  color: #ccc;
+}
+
+.theory-button {
+  background-color: #2cb1a8;
+  background-image: linear-gradient(45deg, #2cb1a8, #1f8073);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.theory-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.theory-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.theory-button:hover {
+  background-color: #1f8073;
+  background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
+  box-shadow: 0 15px 20px rgba(97, 97, 97, 0.3);
+  transform: translateY(-3px);
+}
+
+.theory-button:active {
+  background-color: #1f8073;
+  background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
+  box-shadow: 0 5px 10px rgba(97, 97, 97, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .theory-card {
+    flex-direction: column !important;
+    width: 84%;
+    max-height: none; /* Allow the height to adjust to content */
   }
-  
-  .theory-card-image {
-    width: 70%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+
   .theory-card-content {
-    width: 30%;
-    padding: 20px;
+    order: 2; /* Move content below image */
+    padding: 24px 15px; /* Adjust padding */
+    width: 100%; /* Full width on mobile */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
   }
-  
+
   .theory-card-title {
     margin: 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1.35em;
     color: #fff;
   }
-  
-  .theory-card p {
-    color: #ccc;
+
+  .theory-card-image {
+    order: 1; /* Move image above content */
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height to keep the aspect ratio */
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .theory-card {
-      flex-direction: column;
-    }
-  
-    .theory-card-content {
-      order: 2; /* Move content below image */
-      padding: 2px 2px 0; /* Adjust padding */
-    }
-  
-    .theory-card-image {
-      order: 1; /* Move image above content */
-    }
-  
-    .theory-card-image {
-      width: 100%;
-    }
-  
-    .theory-card-content {
-      width: 70%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  }
-  
+}

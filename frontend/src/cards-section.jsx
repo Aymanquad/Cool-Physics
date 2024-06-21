@@ -6,7 +6,7 @@ const CardSection = ({ cards }) => {
   return (
     <div className="card-section">
       {cards.map((card, index) => (
-        <Card key={index} image={card.image} title={card.title} text={card.text} buttonText={card.buttonText} />
+        <Card id={index} key={index} image={card.image} title={card.title} text={card.text} buttonText={card.buttonText} />
       ))}
     </div>
   );
