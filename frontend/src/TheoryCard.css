@@ -83,14 +83,14 @@
 .theory-button:hover {
   background-color: #1f8073;
   background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
-  box-shadow: 0 15px 20px rgba(97, 97, 97, 0.3);
+  box-shadow: 0 5px 28px rgba(134, 133, 133, 0.3);
   transform: translateY(-3px);
 }
 
 .theory-button:active {
   background-color: #1f8073;
   background-image: linear-gradient(45deg, #1f8073, #2cb1a8);
-  box-shadow: 0 5px 10px rgba(97, 97, 97, 0.2);
+  box-shadow: 0 2px 4px rgba(97, 97, 97, 0.2);
   transform: translateY(-1px);
 }
 

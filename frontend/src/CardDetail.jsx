@@ -4,18 +4,32 @@ import { useParams } from 'react-router-dom';
 const CardDetail = () => {
   const { id } = useParams();
   const [card, setCard] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Replace with your actual data fetching logic
-    fetch(`https://your-backend-api.com/cards/${id}`)
-      .then(response => response.json())
-      .then(data => setCard(data));
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/cards/${id}`);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setCard(data);
+      } catch (error) {
+        console.error('Error fetching card:', error);
+        setError(error);
+      }
+    };
+
+    fetchData();
   }, [id]);
 
+  if (error) return <div>Error: {error.message}</div>;
   if (!card) return <div>Loading...</div>;
 
   return (
     <div>
+      <br /><br /><br />
       <h1>{card.title}</h1>
       <img src={card.image} alt={card.title} />
       <p>{card.content}</p>
