@@ -1,5 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './CardDetail.css'; // Import the CSS file
+
+// Import all images
+import gravityImg from './assets/gravity-img.jpg';
+import relativityImg from './assets/relativity-img.jpg';
+import blackholeImg from './assets/blackhole-img.jpg';
+import quantumImg from './assets/quantommech.jpg';
+import darkmatterImg from './assets/darkmatter-img.jpg';
+import plasmaImg from './assets/plasma-img.jpg';
+import gyroscopeImg from './assets/gyroscope-img.jpg';
+
+// Mapping IDs to images
+const images = {
+  0: gravityImg,
+  1: relativityImg,
+  2: blackholeImg,
+  3: darkmatterImg,
+  4: plasmaImg,
+  5: gyroscopeImg,
+  6: quantumImg,
+};
 
 const CardDetail = () => {
   const { id } = useParams();
@@ -28,12 +49,15 @@ const CardDetail = () => {
   if (!card) return <div>Loading...</div>;
 
   return (
-    <div>
-      <br /><br /><br />
-      <h1>{card.title}</h1>
-      <img src={card.image} alt={card.title} />
-      <p>{card.content}</p>
-      <a href={card.videoLink} target="_blank" rel="noopener noreferrer">Watch Video</a>
+    <div className="card-detail" style={{ backgroundImage: `url(${images[id]})` }}>
+      <div className="card-detail-section">
+        <h1>{card.title}</h1>
+      </div>
+      <div className="translucent">
+        <p>{card.content}</p>
+        <br />
+        <a href={card.videoLink} target="_blank" rel="noopener noreferrer">Watch Video</a>
+      </div>
     </div>
   );
 };
