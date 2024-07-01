@@ -10,6 +10,8 @@ import quantumImg from './assets/quantommech.jpg';
 import darkmatterImg from './assets/darkmatter-img.jpg';
 import plasmaImg from './assets/plasma-img.jpg';
 import gyroscopeImg from './assets/gyroscope-img.jpg';
+import arrowImg from './assets/downarrow.png';
+
 
 // Mapping IDs to images
 const images = {
@@ -54,9 +56,26 @@ const CardDetail = () => {
         <h1>{card.title}</h1>
       </div>
       <div className="translucent">
-        <p>{card.content}</p>
-        <br />
-        <a href={card.videoLink} target="_blank" rel="noopener noreferrer">Watch Video</a>
+        <div className="vertical-line"></div>
+        <div className="text-section">
+          <div className="my-hl"></div>
+          <p>{card.content1}</p>
+          <p>{card.content2}</p>
+          <p>{card.content3}</p>
+          <br /><br />
+          
+          <h3>best video about it !!</h3>
+
+          <img className='mydownarrow' src={arrowImg} alt="arrow img" height={220} width={160} />
+
+          <iframe
+            src={card.videoLink}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Video"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
