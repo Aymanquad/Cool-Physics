@@ -35,6 +35,8 @@ body, html {
   padding: 20px;
   box-sizing: border-box;
   flex-grow: 1; /* Allow it to grow with content */
+  backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
+  -webkit-backdrop-filter: blur(9px); /* For Safari compatibility */
 }
 
 .card-detail h1 {
