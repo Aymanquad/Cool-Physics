@@ -75,6 +75,8 @@ const CardDetail = () => {
             allowFullScreen
             title="Video"
           ></iframe>
+
+
         </div>
       </div>
     </div>

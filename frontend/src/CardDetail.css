@@ -63,6 +63,15 @@ body, html {
   50% { border-color: #ffffff }
 }
 
+@media screen and (max-width: 600px) {
+  .card-detail h1 {
+    font-size: 1.8em; /* Adjust the font size for smaller screens */
+    padding: 8px; /* Adjust the padding if needed */
+    animation: typing 3.3s steps(25, end), blink-caret .75s step-end infinite; /* Adjust animation steps */
+  }
+}
+
+
 .my-hl {
   position: relative;
   right: 0;

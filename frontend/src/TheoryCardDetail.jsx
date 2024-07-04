@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './CardDetail.css'; // Import the CSS file
+import './TheoryCardDetail.css'; // Import the CSS file
 
 // Import all images
 import theory1Img from './assets/theory1.webp';
@@ -13,7 +13,7 @@ import paradox1Img from './assets/paradox1.jpg';
 import paradox2Img from './assets/paradox2.jpg';
 import paradox3Img from './assets/paradox3.jpg';
 import paradox4Img from './assets/paradox4.jpg';
-
+import paradox5Img from './assets/paradox5.jpg';
 import paradox6Img from './assets/paradox6.jpg';
 
 import arrowImg from './assets/downarrow.png';
@@ -31,7 +31,7 @@ const theoryimages = {
   8: paradox2Img,
   9: paradox3Img,
   10: paradox6Img,
-  11:'https://img.freepik.com/premium-photo/closeup-portrait-medieval-knight-black-backgroundgenerative-ai_391052-18569.jpg',
+  11:paradox5Img,
   12: paradox4Img
 };
 
@@ -62,14 +62,14 @@ const TheoryCard = () => {
   if (!card) return <div>Loading...</div>;
 
   return (
-    <div className="card-detail" style={{ backgroundImage: `url(${theoryimages[id]})` }}>
-      <div className="card-detail-section">
-        <h1>{card.title}</h1>
+    <div className="tp-card-detail" style={{ backgroundImage: `url(${theoryimages[id]})` }}>
+      <div className="tp-card-detail-section">
+        <h1 >{card.title}</h1>
       </div>
-      <div className="translucent">
+      <div className="tp-translucent">
         <div className="vertical-line"></div>
         <div className="text-section">
-          <div className="my-hl"></div>
+          <div className="my-tp-hl"></div>
           <p>{card.content1}</p>
           <p>{card.content2}</p>
           <p>{card.content3}</p>

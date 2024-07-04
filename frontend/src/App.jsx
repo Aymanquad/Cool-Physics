@@ -34,7 +34,9 @@ import paradox1Img from './assets/paradox1.jpg';
 import paradox2Img from './assets/paradox2.jpg';
 import paradox3Img from './assets/paradox3.jpg';
 import paradox4Img from './assets/paradox4.jpg';
+import paradox5Img from './assets/paradox5.jpg';
 import paradox6Img from './assets/paradox6.jpg';
+
 
 const cardsData = [
   {
@@ -160,7 +162,7 @@ const paradoxData3 = [
   {
     title: "Zeno's Racetrack Paradox",
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: 'https://img.freepik.com/premium-photo/closeup-portrait-medieval-knight-black-backgroundgenerative-ai_391052-18569.jpg',
+    image: paradox5Img,
     id:11,
   },
   {
