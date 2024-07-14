@@ -1,0 +1,48 @@
+/* .masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 0;
+  }
+  
+  .masonry-item {
+    margin-bottom: 0;
+    overflow: hidden; 
+  }
+   */
+
+
+
+   .pin_container {
+    background-color: rgb(24, 23, 23);
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+  }
+
+  .pin {
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pin img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .pin.small {
+    grid-row-end: span 26;
+  }
+  
+  .pin.medium {
+    grid-row-end: span 33;
+  }
+  
+  .pin.large {
+    grid-row-end: span 45;
+  }
+  

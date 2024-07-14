@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CardDetail from './CardDetail';
 import TheoryCardDetail from './TheoryCardDetail';
+import MasonryLayout from './MasonryLayout'; 
 
 import Section1 from './section1';
 import Section2 from './section2';
@@ -208,6 +209,8 @@ const Home = () => (
     <TheoryCards cards={paradoxData3} order="reverse" />
  
     <TitleWithAnimation title="Last thing" />
+
+    <MasonryLayout />
   </>
 );
 
