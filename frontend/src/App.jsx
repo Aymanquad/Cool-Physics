@@ -208,7 +208,7 @@ const Home = () => (
     <TheoryCards cards={paradoxData2} order="reverse" />
     <TheoryCards cards={paradoxData3} order="reverse" />
  
-    <TitleWithAnimation title="Last thing" />
+    <TitleWithAnimation title="More Mind-Danling Concepts" />
 
     <MasonryLayout />
   </>
