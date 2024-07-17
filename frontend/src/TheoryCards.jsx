@@ -32,7 +32,7 @@ const TheoryCards = ({ cards = [], order}) => {
   }, [controls]);
 
   return (
-    <div className="theory-cards">
+    <div id='theories' className="theory-cards">
       {cards.map((card, index) => (
         <motion.div
           key={index}

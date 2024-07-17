@@ -43,43 +43,43 @@ const cardsData = [
   {
     image: gravityImg,
     title: 'Gravity',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: 'Gravity, an invisible force that holds planets, stars, and galaxies together and governs the motion of everything in the universe, pulling objects towards each other',
     buttonText: 'Learn More',
   },
   {
     image: relativityImg,
     title: 'Relativity',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: 'Relativity revolutionizes our understanding of space and time, revealing that they are intertwined and can bend, stretch, and warp depending on speed and gravity.',
     buttonText: 'Learn More',
   },
   {
     image: BlackholeImg,
     title: 'Black Holes',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: 'Black holes are cosmic enigmas with gravitational pulls so strong that not even light can escape, warping spacetime and challenging our grasp of the universe.',
     buttonText: 'Learn More',
   },
   {
     image: darkmatterImg,
     title: 'Dark Matter',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: "Dark matter is the unseen substance that makes up most of the universe's mass , mysteriously holding all the galaxies together while eluding direct detection.",
     buttonText: 'Learn More',
   },
   {
     image: plasmaImg,
     title: 'Plasma Physics',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: ' Plasma physics explores the fourth state of matter , where ionized gases conduct electricity and create stunning phenomena like solar flares, auroras and more .',
     buttonText: 'Learn More',
   },
   {
     image: GyroscopeImg,
     title: 'Gyroscopic Motion',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: 'Gyroscopic motion demonstrates how spinning objects resist changes to their orientation, a principle utilized in everything from toys to spacecraft navigation.',
     buttonText: 'Learn More',
   },
   {
     image: quantomImg,
     title: 'Quantum Mechanics',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ',
+    text: 'Quantum physics dives into the bizarre world of subatomic particles, where probabilities rule, particles can be in multiple places at once, and observation alters reality.',
     buttonText: 'Learn More',
   },
 ];
@@ -87,13 +87,13 @@ const cardsData = [
 const theoryCardData1 = [
   {
     title: 'String Theory',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: 'Infinitesimal vibrating strings forming the fabric of the universe.',
     image: theory1Img,
     id:1,
   },
   {
     title: 'Beauty of Time',
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    content: "Time's nature: presentism's flow or eternalism's layers.",
     image: theory2Img,
     id:2,
   },
@@ -102,13 +102,13 @@ const theoryCardData1 = [
 const theoryCardData2 = [
   {
     title: 'Chaos Theory',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipi',
+    content: 'Tiny changes, massive consequences in deterministic systems.',
     image: 'https://miro.medium.com/v2/resize:fit:786/format:webp/1*6ehwW04jwunImzrhYKRlbQ.gif',
     id:3,
   },
   {
     title: 'Solipsism',
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore ',
+    content: 'Only your consciousness is verifiable; everything else is uncertain!',
     image: theory4Img,
     id:4,
   },
@@ -117,13 +117,13 @@ const theoryCardData2 = [
 const theoryCardData3 = [
   {
     title: 'Phenomenalism',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: 'Objects exist only through perception; if unseen, do they vanish ?',
     image: theory5Img,
     id:5,
   },
   {
     title: 'Superfluid space-time',
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    content: 'Space-time flows without friction, possibly forming galactic vortices.',
     image: theory6Img,
     id:6,
   },
@@ -132,13 +132,13 @@ const theoryCardData3 = [
 const paradoxData1 = [
   {
     title: 'Bootstrap Paradox',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: 'The most crazy paradox that will make you ponder for long ',
     image: paradox1Img,
     id:7,
   },
   {
     title: "Einstein's twin paradox",
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    content: 'Traveling twin ages slower, returning younger due to relativity.',
     image: paradox2Img,
     id:8,
   },
@@ -147,13 +147,13 @@ const paradoxData1 = [
 const paradoxData2 = [
   {
     title: 'The billiard ball paradox',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: 'Time-traveling ball disrupting its own past trajectory ?',
     image: paradox3Img,
     id:9,
   },
   {
     title: 'Infinite hotel Paradox',
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    content: 'Hotel with infinite rooms can always accommodate infinite guests. Or can they ?',
     image: paradox6Img,
     id:10,
   },
@@ -162,13 +162,13 @@ const paradoxData2 = [
 const paradoxData3 = [
   {
     title: "Zeno's Racetrack Paradox",
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    content: 'Infinite steps required, motion seems impossible ?',
     image: paradox5Img,
     id:11,
   },
   {
     title: 'Boltzmann Brain Paradox',
-    content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    content: 'Random fluctuations could spontaneously create self-aware entities.',
     image: paradox4Img,
     id:12,
   },
@@ -181,7 +181,7 @@ const Home = () => (
     <Section3 />
     <FourthSection />
 
-    <h4 className="section5 d-flex align-items-center justify-content-center text-center">
+    <h4 className="section5 d-flex align-items-center justify-content-center text-center hind-regular">
       With these laws, you're halfway done with physics.
     </h4>
 

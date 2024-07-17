@@ -23,7 +23,7 @@ import more18 from './assets/more18.jpg';  //Conspiracy?
 
 function MasonryLayout() {
   return (
-    <div className="lastsection">
+    <div id='mindDanglingConcepts' className="lastsection">
       <div className='pin_container'>
         <Pin size='large' imgSrc={more3} link='https://www.youtube.com/watch?v=isdLel273rQ' title='Is the Universe Infinite ?'  />
         <Pin size='small' imgSrc={more5} link='https://www.youtube.com/watch?v=an0M-wcHw5A' title='Faster-Than-Light?'/>

@@ -4,7 +4,7 @@ import './cards-section.css'; // Import your CSS file for styling
 
 const CardSection = ({ cards }) => {
   return (
-    <div className="card-section">
+    <div id="coolTopics" className="card-section">
       {cards.map((card, index) => (
         <Card id={index} key={index} image={card.image} title={card.title} text={card.text} buttonText={card.buttonText} />
       ))}

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Pin({ size, imgSrc, link, title }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" style={{ ...styles.card, ...styles[size] }}>
+    <a className='lasta' href={link} target="_blank" rel="noopener noreferrer" style={{ ...styles.card, ...styles[size] }}>
       <img src={imgSrc} alt="Pin" style={styles.img} />
       <div className="overlay" style={styles.overlay}>
         <h5 style={styles.title}>{title}</h5>

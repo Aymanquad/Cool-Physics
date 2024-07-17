@@ -1,7 +1,7 @@
   .lastsection {
     margin-bottom: 0px;
     color: #ffffff;
-    padding-top: 109px; /* Adjust padding as needed */
+    padding-top: 19px; /* Adjust padding as needed */
     padding-bottom: 8px;
     background: rgb(24, 23, 23);
   }
@@ -39,7 +39,7 @@
     grid-row-end: span 45;
   }
   
-  a {
+  .lasta {
     display: block;
     margin: 15px 10px;
     padding: 0;
@@ -49,13 +49,13 @@
     transition: transform 0.3s;
   }
   
-  a img {
+  .lasta img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  a .overlay {
+  .lasta .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,22 +69,22 @@
     align-items: center;
   }
   
-  a:hover .overlay {
+  .lasta:hover .overlay {
     opacity: 1;
   }
   
-  a:hover {
+  .lasta:hover {
     transform: scale(1.04);
   }
   
-  a .overlay h6 {
+  .lasta .overlay h6 {
     color: white;
     font-size: 1.2em;
     opacity: 1;
   }
 
   @media (max-width: 808px) {
-    a .overlay {
+    .lasta .overlay {
       opacity: 1;
     }
   }

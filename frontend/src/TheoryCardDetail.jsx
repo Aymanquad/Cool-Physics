@@ -70,9 +70,9 @@ const TheoryCard = () => {
         <div className="vertical-line"></div>
         <div className="text-section">
           <div className="my-tp-hl"></div>
-          <p>{card.content1}</p>
-          <p>{card.content2}</p>
-          <p>{card.content3}</p>
+          <p className='nunito-sans'>{card.content1}</p>
+          <p className='nunito-sans'>{card.content2}</p>
+          <p className='nunito-sans'>{card.content3}</p>
           <br /><br />
           
           <h3>best video about it !!</h3>

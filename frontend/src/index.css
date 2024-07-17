@@ -1,15 +1,52 @@
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
-/* body{
-  background-color: black;
-} */
-
-/* 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+html {
+  scroll-behavior: smooth;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
 
+.marck-style {
+  font-family: "Marck Script", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}
 
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.nunito-sans { 
+  font-family: "Nunito Sans", sans-serif   !important; 
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 158% !important; 
+  word-spacing: 0.17em !important;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.hind-regular {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  word-spacing: 0.14em !important;
+  font-style: normal;
+}
