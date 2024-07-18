@@ -11,13 +11,19 @@ const TheoryCards = require('./models/TheoryCard');
 const theoryCardController = require('./controllers/theoryCard'); 
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["https://cool-physics-backend.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 app.use(express.json());
 
 // Dummy data for Theory-cards
 
 
-
+app.get('/' , (req,res)=>{
+    res.json("backend habibi !");
+})
 
 // Route to get card by ID
 app.get('/cards/:id', (req, res) => {
