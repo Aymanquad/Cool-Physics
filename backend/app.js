@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require("cors");
 const PORT = process.env.PORT || 5000; // Use environment variable for the port
 
-const mongoUri = "mongodb+srv://mohammedaymanquadri:Ayman2004@cluster0.txcvfxs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/CoolPhysics";
+const mongoUri = process.env.MONGO_URI;
 
 const Cards = require('./models/Card');
 const cardController = require('./controllers/card'); 
@@ -14,7 +14,7 @@ const theoryCardController = require('./controllers/theoryCard');
 
 // Middleware
 app.use(cors({
-  origin: ["https://cool-physics-backend.vercel.app/"], // Update this to match your Vercel deployment URL
+  origin: ["https://cool-physics.vercel.app"], // frntend Vercel deployment URL
   methods: ["POST", "GET"],
   credentials: true
 }));
