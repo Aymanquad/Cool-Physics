@@ -43,7 +43,7 @@ const TheoryCard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/theorycards/${id}`);
+        const response = await fetch(`https://cool-physics-backend.vercel.app/${id}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
