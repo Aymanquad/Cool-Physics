@@ -135,8 +135,8 @@ body, html {
     height: auto;
   }
   .card-detail h1 {
-    font-size: 2.3em;
+    font-size: 1.8em;
     padding: 10px;
-    letter-spacing: .14rem;
+    letter-spacing: .017rem;
   }
 }
