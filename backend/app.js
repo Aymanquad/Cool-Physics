@@ -82,7 +82,7 @@ mongoose.connect(PORT)
         //to add theorycards
         //theoryCardController.addTheoryCard();
 
-        app.listen(5000);
+        app.listen('https://cool-physics-backend.vercel.app');
     })
     .catch((error) => {
         console.error('Error connecting to MongoDB:', error);
