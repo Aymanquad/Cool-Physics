@@ -26,6 +26,13 @@ p {
   font-style: normal;
 }
 
+.centerthis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .poppins-thin-italic {
   font-family: "Poppins", sans-serif;
   font-weight: 100;

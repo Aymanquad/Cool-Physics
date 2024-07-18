@@ -59,7 +59,7 @@ const TheoryCard = () => {
   }, [id]);
 
   if (error) return <div> <br /><br /><br /><br /> Error: {error.message}</div>;
-  if (!card) return <div className='poppins-regular' style="display: flex; justify-content: center; align-items: center; height: 100vh;">One Moment...</div>
+  if (!card) return <div className='poppins-regular centerthis'>One Moment...</div>
 ;
 
   return (

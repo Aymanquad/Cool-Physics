@@ -48,7 +48,7 @@ const CardDetail = () => {
   }, [id]);
 
   if (error) return <div>Error: {error.message}</div>;
-  if (!card) return <div className='poppins-regular' style="display: flex; justify-content: center; align-items: center; height: 100vh;">One Moment...</div>
+  if (!card) return <div className='poppins-regular centerthis'>One Moment...</div>
 
   return (
     <div className="card-detail" style={{ backgroundImage: `url(${images[id]})` }}>
