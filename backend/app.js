@@ -14,7 +14,7 @@ const theoryCardController = require('./controllers/theoryCard');
 
 // Middleware
 app.use(cors({
-  origin: ["https://cool-physics-backend.vercel.app"], // Update this to match your Vercel deployment URL
+  origin: ["https://cool-physics.vercel.app"], // Update this to match your Vercel deployment URL
   methods: ["POST", "GET"],
   credentials: true
 }));
