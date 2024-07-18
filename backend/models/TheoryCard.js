@@ -9,4 +9,5 @@ const theoryCardSchema = new mongoose.Schema({
   videoLink: { type: String, required: true },
 });
 
-module.exports = mongoose.model('TheoryCard', theoryCardSchema);
+const TheoryCards = mongoose.model('TheoryCard', theoryCardSchema);
+module.exports = TheoryCards;
