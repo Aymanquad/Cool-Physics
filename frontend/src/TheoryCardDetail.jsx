@@ -59,7 +59,8 @@ const TheoryCard = () => {
   }, [id]);
 
   if (error) return <div> <br /><br /><br /><br /> Error: {error.message}</div>;
-  if (!card) return <div>Loading...</div>;
+  if (!card) return <div className='poppins-regular' style="display: flex; justify-content: center; align-items: center; height: 100vh;">One Moment...</div>
+;
 
   return (
     <div className="tp-card-detail" style={{ backgroundImage: `url(${theoryimages[id]})` }}>
