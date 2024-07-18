@@ -60,14 +60,9 @@ app.get('/theorycards/:id', (req, res) => {
     });
 });
 
-mongoose.connect(mongoUri)
+mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => { 
     console.log('Connected to MongoDB !'); 
-
-    //To add cards :
-    // cardController.addCard();
-    // theoryCardController.addTheoryCard();
-
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
@@ -75,3 +70,5 @@ mongoose.connect(mongoUri)
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
   });
+
+module.exports = app; // Export the Express app
