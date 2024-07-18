@@ -24,22 +24,21 @@ app.get('/', (req, res) => {
   res.json("backend habibi !");
 });
 
-app.get('/cards/:id', (req, res) => {
-  const { id } = req.params;
-  Cards.findOne({ id: id.trim() })
-    .then(card => {
-      if (card) {
-        res.json(card);
-      } else {
-        res.status(404).json({ error: "Card not found" });
-      }
-    })
-    .catch(error => {
-      console.log("some err occured in finding", error);
-      res.status(500).json({ message: 'Server error', error });
-    });
+app.get('/cards/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const card = await Cards.findOne({ id: id.trim() }).maxTimeMS(5000); // Example of setting a timeout of 5 seconds (5000 milliseconds)
+    
+    if (card) {
+      res.json(card);
+    } else {
+      res.status(404).json({ error: "Card not found" });
+    }
+  } catch (error) {
+    console.error("Error occurred:", error);
+    res.status(500).json({ message: 'Server error', error });
+  }
 });
-
 app.get('/theorycards/:id', (req, res) => {
   const { id } = req.params;
   TheoryCards.findOne({ id: id.trim() })
