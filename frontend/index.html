@@ -14,5 +14,43 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
+
+
+    <script>
+      (function (w, d, s, o) {
+          if (w[o]) return; // prevent double-definition
+      
+          w[o] = function () {
+          (w[o].q = w[o].q || []).push(arguments);
+          };
+      
+          const js = d.createElement(s);
+          js.src = 'https://digilitics-co-project.onrender.com/widget.js';
+          js.async = true;
+          js.dataset.widgetId = '69243739f34822c0156b7632';
+          js.dataset.apiKey = 'ldk_48c9e8b71543d5dc76d642940f640203417b1c063746e5ba8466d6c92cd8bdbe';
+          js.dataset.baseUrl = 'https://digilitics-co-project.onrender.com';
+          js.dataset.enableMultiRouting = 'true';
+          js.dataset.autoCrawl = 'true';
+          js.dataset.crawlDepth = '2';
+          js.dataset.maxPages = '20';
+      
+          // Global config fallback for widget.js
+          w.__DIGILYTICS_CONFIG__ = {
+          widgetId: js.dataset.widgetId,
+          apiKey: js.dataset.apiKey,
+          baseUrl: js.dataset.baseUrl,
+          enableMultiRouting: js.dataset.enableMultiRouting === 'true',
+          autoCrawl: js.dataset.autoCrawl === 'true',
+          crawlDepth: Number(js.dataset.crawlDepth || '2'),
+          maxPages: Number(js.dataset.maxPages || '20'),
+          };
+      
+          const firstScript = d.getElementsByTagName(s)[0] || d.head || d.body;
+          firstScript.parentNode.insertBefore(js, firstScript);
+      })(window, document, 'script', 'DigiliticsChat');
+      </script>
+
+
   </body>
 </html>
